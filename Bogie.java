@@ -1,27 +1,20 @@
 class Bogie {
-    String bogieNumber;
-    String bogieType;
-    int capacity;
-    String color;
-    double weightInTons;
-    String manufacturer;
-    int yearOfManufacture;
-    boolean hasBioToilets;
-    int numberOfDoors;
-    boolean isAC;
+    String bogieNumber; String bogieType; int capacity; String color; double weightInTons; 
+    String manufacturer; int yearOfManufacture; boolean hasBioToilets; int numberOfDoors; boolean isAC;
 
-    public void getBogieDetails() {
+    public Bogie(String bogieNumber, String bogieType, int capacity, String color, double weightInTons, String manufacturer, int yearOfManufacture, boolean hasBioToilets, int numberOfDoors, boolean isAC) {
+        this.bogieNumber = bogieNumber; this.bogieType = bogieType; this.capacity = capacity; this.color = color;
+        this.weightInTons = weightInTons; this.manufacturer = manufacturer; this.yearOfManufacture = yearOfManufacture;
+        this.hasBioToilets = hasBioToilets; this.numberOfDoors = numberOfDoors; this.isAC = isAC;
+    }
+
+    public void displayDetails() {
         System.out.println("------------------------");
-        System.out.println("The Bogie Details are:");
-        System.out.println("The Bogie Number is :" + bogieNumber);
-        System.out.println("The Bogie Type is :" + bogieType);
-        System.out.println("The Capacity is :" + capacity);
-        System.out.println("The Color is :" + color);
-        System.out.println("The Weight (Tons) is :" + weightInTons);
-        System.out.println("The Manufacturer is :" + manufacturer);
-        System.out.println("The Year of Manufacture is :" + yearOfManufacture);
-        System.out.println("Has Bio Toilets :" + hasBioToilets);
-        System.out.println("Number of Doors :" + numberOfDoors);
-        System.out.println("Is AC :" + isAC);
+        System.out.println("Bogie Number : " + bogieNumber + " | Type : " + bogieType + " | Capacity : " + capacity);
+        System.out.println("Color : " + color + " | Weight : " + weightInTons + "T | Mfr : " + manufacturer);
+        System.out.println("Year : " + yearOfManufacture + " | BioToilets : " + hasBioToilets + " | Doors : " + numberOfDoors + " | AC : " + isAC);
     }
 }
+
+
+

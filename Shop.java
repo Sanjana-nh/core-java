@@ -1,27 +1,20 @@
 class Shop {
-    String shopNumber;
-    String shopName;
-    String category;
-    int floorNumber;
-    double areaInSqFt;
-    double monthlyRent;
-    int numberOfEmployees;
-    boolean isAirConditioned;
-    String managerName;
-    String contactNumber;
+    String shopNumber; String shopName; String category; int floorNumber; double areaInSqFt; 
+    double monthlyRent; int numberOfEmployees; boolean isAirConditioned; String managerName; String contactNumber;
 
-    public void getShopDetails() {
+    public Shop(String shopNumber, String shopName, String category, int floorNumber, double areaInSqFt, double monthlyRent, int numberOfEmployees, boolean isAirConditioned, String managerName, String contactNumber) {
+        this.shopNumber = shopNumber; this.shopName = shopName; this.category = category; this.floorNumber = floorNumber;
+        this.areaInSqFt = areaInSqFt; this.monthlyRent = monthlyRent; this.numberOfEmployees = numberOfEmployees;
+        this.isAirConditioned = isAirConditioned; this.managerName = managerName; this.contactNumber = contactNumber;
+    }
+
+    public void displayDetails() {
         System.out.println("------------------------");
-        System.out.println("The Shop Details are:");
-        System.out.println("Shop Number : " + shopNumber);
-        System.out.println("Shop Name : " + shopName);
-        System.out.println("Category : " + category);
-        System.out.println("Floor Number : " + floorNumber);
-        System.out.println("Area (Sq Ft) : " + areaInSqFt);
-        System.out.println("Monthly Rent : " + monthlyRent);
-        System.out.println("Employees : " + numberOfEmployees);
-        System.out.println("Air Conditioned: " + isAirConditioned);
-        System.out.println("Manager : " + managerName);
-        System.out.println("Contact : " + contactNumber);
+        System.out.println("Shop # : " + shopNumber + " | Name : " + shopName + " | Category : " + category);
+        System.out.println("Floor : " + floorNumber + " | Area : " + areaInSqFt + " | Rent : " + monthlyRent);
+        System.out.println("Emp : " + numberOfEmployees + " | AC : " + isAirConditioned + " | Mgr : " + managerName + " | Contact : " + contactNumber);
     }
 }
+
+
+

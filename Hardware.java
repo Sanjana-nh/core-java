@@ -1,27 +1,20 @@
 class Hardware {
-    String componentType;
-    String manufacturer;
-    String modelName;
-    int releaseYear;
-    double price;
-    int warrantyYears;
-    int powerDrawWatts;
-    boolean hasRGB;
-    String formFactor;
-    double weightInKg;
+    String componentType; String manufacturer; String modelName; int releaseYear; double price; 
+    int warrantyYears; int powerDrawWatts; boolean hasRGB; String formFactor; double weightInKg;
 
-    public void getHardwareDetails() {
+    public Hardware(String componentType, String manufacturer, String modelName, int releaseYear, double price, int warrantyYears, int powerDrawWatts, boolean hasRGB, String formFactor, double weightInKg) {
+        this.componentType = componentType; this.manufacturer = manufacturer; this.modelName = modelName;
+        this.releaseYear = releaseYear; this.price = price; this.warrantyYears = warrantyYears;
+        this.powerDrawWatts = powerDrawWatts; this.hasRGB = hasRGB; this.formFactor = formFactor; this.weightInKg = weightInKg;
+    }
+
+    public void displayDetails() {
         System.out.println("------------------------");
-        System.out.println("The Hardware Details are:");
-        System.out.println("Component Type : " + componentType);
-        System.out.println("Manufacturer : " + manufacturer);
-        System.out.println("Model Name : " + modelName);
-        System.out.println("Release Year : " + releaseYear);
-        System.out.println("Price ($) : " + price);
-        System.out.println("Warranty (Years) : " + warrantyYears);
-        System.out.println("Power Draw (W) : " + powerDrawWatts);
-        System.out.println("Has RGB : " + hasRGB);
-        System.out.println("Form Factor : " + formFactor);
-        System.out.println("Weight (Kg) : " + weightInKg);
+        System.out.println("Type : " + componentType + " | Mfr : " + manufacturer + " | Model : " + modelName);
+        System.out.println("Year : " + releaseYear + " | Price : $" + price + " | Warranty : " + warrantyYears + "Y");
+        System.out.println("Power : " + powerDrawWatts + "W | RGB : " + hasRGB + " | Form : " + formFactor + " | Wgt : " + weightInKg + "kg");
     }
 }
+
+
+

@@ -1,12 +1,13 @@
 class Formula1 {
-    String raceCategory;
-    int seasonYear;
-    Franchise franchise;
+    String raceCategory; int seasonYear; Franchise franchise;
 
-    public void getFormula1Details() {
+    public Formula1(String raceCategory, int seasonYear, Franchise franchise) {
+        this.raceCategory = raceCategory; this.seasonYear = seasonYear; this.franchise = franchise;
+    }
+
+    public void displayDetails() {
         System.out.println("========================");
-        System.out.println("The Race Category is : " + raceCategory);
-        System.out.println("The Season Year is : " + seasonYear);
-        this.franchise.getFranchiseDetails();
+        System.out.println("Category : " + raceCategory + " | Season : " + seasonYear);
+        this.franchise.displayDetails();
     }
 }

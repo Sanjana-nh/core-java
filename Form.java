@@ -1,27 +1,22 @@
-class Form{
-	String formName;
-	String originState;
-	int year;
-	String traditionalProp;
-    int typicalNumberOfPerformers;
-    double performanceDurationMins;
-    boolean isClassical;
-    String primaryCostumeColor;
-    String accompanyingMusicInstrument;
-    String difficultyLevel;
-	
-	public void getFormDetails() {
-        System.out.println("------------------------");
-        System.out.println("The Dance Form Details are:");
-        System.out.println("Form Name : " + formName);
-        System.out.println("Origin State : " + originState);
-        System.out.println("Approx Origin Year : " + approximateOriginYear);
-        System.out.println("Traditional Prop : " + traditionalProp);
-        System.out.println("Performers : " + typicalNumberOfPerformers);
-        System.out.println("Duration (Mins) : " + performanceDurationMins);
-        System.out.println("Is Classical : " + isClassical);
-        System.out.println("Costume Color : " + primaryCostumeColor);
-        System.out.println("Main Instrument : " + accompanyingMusicInstrument);
-        System.out.println("Difficulty : " + difficultyLevel);
+class Form {
+    String formName; String originState; int approximateOriginYear; String traditionalProp; int typicalNumberOfPerformers; 
+    double performanceDurationMins; boolean isClassical; String primaryCostumeColor; String accompanyingMusicInstrument; String difficultyLevel;
 
+    public Form(String formName, String originState, int approximateOriginYear, String traditionalProp, int typicalNumberOfPerformers, double performanceDurationMins, boolean isClassical, String primaryCostumeColor, String accompanyingMusicInstrument, String difficultyLevel) {
+        this.formName = formName; this.originState = originState; this.approximateOriginYear = approximateOriginYear;
+        this.traditionalProp = traditionalProp; this.typicalNumberOfPerformers = typicalNumberOfPerformers;
+        this.performanceDurationMins = performanceDurationMins; this.isClassical = isClassical;
+        this.primaryCostumeColor = primaryCostumeColor; this.accompanyingMusicInstrument = accompanyingMusicInstrument;
+        this.difficultyLevel = difficultyLevel;
+    }
+
+    public void displayDetails() {
+        System.out.println("------------------------");
+        System.out.println("Form : " + formName + " | State : " + originState + " | Year : " + approximateOriginYear);
+        System.out.println("Prop : " + traditionalProp + " | Performers : " + typicalNumberOfPerformers + " | Duration : " + performanceDurationMins);
+        System.out.println("Classical : " + isClassical + " | Color : " + primaryCostumeColor + " | Instrument : " + accompanyingMusicInstrument + " | Diff : " + difficultyLevel);
+    }
 }
+
+
+

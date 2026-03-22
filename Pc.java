@@ -1,12 +1,13 @@
 class Pc {
-    String pcName;
-    String buildType;
-    Hardware hardware;
+    String pcName; String buildType; Hardware hardware;
 
-    public void getPcDetails() {
+    public Pc(String pcName, String buildType, Hardware hardware) {
+        this.pcName = pcName; this.buildType = buildType; this.hardware = hardware;
+    }
+
+    public void displayDetails() {
         System.out.println("========================");
-        System.out.println("The PC Name is : " + pcName);
-        System.out.println("The Build Type is : " + buildType);
-        this.hardware.getHardwareDetails();
+        System.out.println("PC Name : " + pcName + " | Build : " + buildType);
+        this.hardware.displayDetails();
     }
 }
