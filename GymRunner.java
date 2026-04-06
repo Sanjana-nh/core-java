@@ -3,7 +3,7 @@ class GymRunner {
         Gym gym = new Gym();
 
         gym.addEquipment("Treadmill");
-        gym.addEquipment("Dumbbells");
+        gym.addEquipment("Dumbbell");
         gym.addEquipment("Barbell");
         gym.addEquipment("Kettlebell");
         gym.addEquipment("Bench Press");
@@ -20,5 +20,11 @@ class GymRunner {
         gym.addEquipment("Yoga Mat");
 
         gym.getEquipments();
+		gym.getEquipmentsByIndex(7);
+		gym.getIndexByEquipments("Dumbbell");
+		gym.updateEquipments("Dumbell", "Dumbbells");
+gym.getEquipments();
+gym.deleteEquipments("Treadmill");
+gym.getEquipments();
     }
 }

@@ -13,5 +13,11 @@ class GovernmentRunner {
         gov.addCompetitiveExamName("GATE");
 
         gov.getCompetitiveExamNames();
+		gov.getCompetitiveExamNamesByIndex(9);
+		gov.getIndexByCompetitiveExamNames("SBI PO");
+		gov.updateCompetitiveExamNames("UPSC Civil Services", "UPSC CSE");
+		gov.getCompetitiveExamNames();
+		gov.deleteCompetitiveExamNames("SSC CGL");
+		gov.getCompetitiveExamNames();
     }
 }

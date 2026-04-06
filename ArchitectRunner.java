@@ -15,5 +15,11 @@ class ArchitectRunner {
         architect.addInteriorDesignName("Contemporary");
 
         architect.getInteriorDesignNames();
+		architect.getInteriorDesignNamesByIndex(3);
+		architect.getIndexByInteriorDesignNames("Rustic Farmhouse");
+		architect.updateInteriorDesignNames("Art Deco", "Eclectic");
+		architect.getInteriorDesignNames();
+		architect.deleteInteriorDesignNames("Bohemian (Boho)");
+		architect.getInteriorDesignNames();
     }
 }

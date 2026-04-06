@@ -2,7 +2,7 @@ class RCbRunner {
     public static void main(String[] args) {
         RCb team = new RCb();
 
-        team.addPlayerName("Virat Kohli");
+        team.addPlayerName("Virat ");
         team.addPlayerName("Faf du Plessis");
         team.addPlayerName("Glenn Maxwell");
         team.addPlayerName("Mohammed Siraj");
@@ -19,5 +19,11 @@ class RCbRunner {
         team.addPlayerName("Alzarri Joseph");
 
         team.getPlayerNames();
+		team.getPlayerNamesByIndex(20);
+		team.getIndexByPlayerNames("Faf du Plessis");
+		team.updatePlayerNames("Virat", "Virat Kohli");
+team.getPlayerNames();
+team.deletePlayerNames("Glenn Maxwell");
+team.getPlayerNames();
     }
 }

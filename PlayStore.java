@@ -1,0 +1,3 @@
+class PlayStore extends AppManager{
+
+}

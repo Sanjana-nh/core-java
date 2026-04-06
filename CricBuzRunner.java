@@ -12,5 +12,11 @@ class CricBuzRunner {
         cricBuz.addTeamName("Rajasthan Royals");
 
         cricBuz.getTeamNames();
+		cricBuz.getTeamNamesByIndex(6);
+		cricBuz.getIndexByTeamNames("Delhi Capitals");
+		cricBuz.updateTeamNames("Punjab Kings", "Gujurat Titains");
+		cricBuz.getTeamNames();
+		cricBuz.deleteTeamNames("Punjab Kings");
+		cricBuz.getTeamNames();
     }
 }

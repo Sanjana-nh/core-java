@@ -30,5 +30,11 @@ class ECommerceRunner {
         eCommerce.addProductName("E-reader");
 
         eCommerce.getProductNames();
+		eCommerce.getProductNamesByIndex(14);
+		eCommerce.getIndexByProductNames("Java Programming Book");
+		eCommerce.updateProductNames("Mouse Pad" , "Charger Hub");
+		eCommerce.getProductNames();
+		eCommerce.deleteProductNames("Water Bottle");
+		eCommerce.getProductNames();
     }
 }

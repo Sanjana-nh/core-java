@@ -2,7 +2,7 @@ class UniverseRunner {
     public static void main(String[] args) {
         Universe universe = new Universe();
 
-        universe.addGalaxy("Milky Way");
+        universe.addGalaxy("Milkyway");
         universe.addGalaxy("Andromeda");
         universe.addGalaxy("Triangulum");
         universe.addGalaxy("Whirlpool Galaxy");
@@ -21,5 +21,11 @@ class UniverseRunner {
         universe.addGalaxy("Messier 87");
 
         universe.getGalaxies();
+		universe.getGalaxiesByIndex(6);
+		universe.getIndexByGalaxies("Pinwheel Galaxy");
+		universe.updateGalaxies("Milkyway", "Milky Way");
+universe.getGalaxies();
+universe.deleteGalaxies("Andromeda");
+universe.getGalaxies();
     }
 }

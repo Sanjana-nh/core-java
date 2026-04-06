@@ -2,7 +2,7 @@ class MuseumRunner {
     public static void main(String[] args) {
         Museum museum = new Museum();
 
-        museum.addHistoricalMonument("Taj Mahal");
+        museum.addHistoricalMonument("Taj");
         museum.addHistoricalMonument("Qutub Minar");
         museum.addHistoricalMonument("Red Fort");
         museum.addHistoricalMonument("Hawa Mahal");
@@ -20,5 +20,11 @@ class MuseumRunner {
         museum.addHistoricalMonument("Alhambra");
 
         museum.getHistoricalMonuments();
+		museum.getHistoricalMonumentsByIndex(22);
+		museum.getIndexByHistoricalMonuments("Great Wall of China");
+		museum.updateHistoricalMonuments("Taj", "Taj Mahal");
+museum.getHistoricalMonuments();
+museum.deleteHistoricalMonuments("Qutub Minar");
+museum.getHistoricalMonuments();
     }
 }

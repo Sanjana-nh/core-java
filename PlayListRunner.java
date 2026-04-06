@@ -19,5 +19,11 @@ class PlayListRunner {
         playList.addSongName("Hallelujah");
 
         playList.getSongNames();
+		playList.getSongNamesByIndex(4);
+		playList.getIndexBySongNames("Yesterday");
+playList.updateSongNames("Yesterday", "New Song");
+playList.getSongNames();
+playList.deleteSongNames("Hey Jude");
+playList.getSongNames();
     }
 }

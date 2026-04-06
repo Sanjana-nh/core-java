@@ -19,4 +19,65 @@ class Wonderla {
             System.out.println(waterGame);
         }
     }
+	public String getWaterGamesByIndex (int index){
+	String waterGame = null ;
+	if (index < waterGames .length){
+		waterGame  = waterGames [index];
+		System.out.println("The waterGame  at index " + index  +" is: " + waterGame );
+	}
+	else {
+		System.out.println("In valid value " + index);
+	}
+	return waterGame ;
+}
+
+	public int getIndexByWaterGames(String waterGame ){
+	int index = 0;
+    for (String cwaterGame  : waterGames ) {
+        if (cwaterGame  == waterGame  ) {
+			System.out.println("The index of " + cwaterGame  + "is: " + index);
+            return index; 
+        }
+		else{
+			 index++;
+		}
+		
+    }
+	System.out.println ("Invalid Name");
+
+	return index ;
+}
+public boolean updateWaterGames(String existingWaterGame , String updateWaterGame){
+    boolean isWaterGameUpdated = false;
+    for(int index = 0 ; index< waterGames.length;index++){
+        if (waterGames[index] == existingWaterGame){
+            waterGames[index] = updateWaterGame ;
+            isWaterGameUpdated = true;
+            System.out.println("The updated name of " + existingWaterGame + " is :" + updateWaterGame);
+        }
+    }
+    if (isWaterGameUpdated == false){
+        System.out.println("Faild to Update the Data");
+    }
+    return isWaterGameUpdated;
+}
+
+public boolean deleteWaterGames(String waterGame){
+    boolean isWaterGameDeleted = false;
+
+    for(int index = 0; index < waterGames.length; index++){
+        if(waterGames[index] != null && waterGames[index].equals(waterGame)){
+            waterGames[index] = null;
+            isWaterGameDeleted = true;
+            System.out.println(waterGame+ " is deleted");
+            break;
+        }
+    }
+
+    if(isWaterGameDeleted == false){
+        System.out.println(waterGame + " not found");
+    }
+
+    return isWaterGameDeleted;
+}
 }

@@ -21,5 +21,11 @@ class TelevisionRunner {
         television.addChannelName("HBO");
 
         television.getChannelNames();
+		television.getChannelNamesByIndex(5);
+		television.getIndexByChannelNames("Star Plus");
+		television.updateChannelNames("Star Plus", "Star Bharat");
+television.getChannelNames();
+television.deleteChannelNames("Zee TV");
+television.getChannelNames();
     }
 }

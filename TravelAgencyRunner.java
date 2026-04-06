@@ -21,5 +21,11 @@ class TravelAgencyRunner {
         agency.addPlace("Rio de Janeiro");
 
         agency.getPlaces();
+		agency.getPlacesByIndex(4);
+		agency.getIndexByPlaces("Bali");
+		agency.updatePlaces("Dubai", "Munnar Hills");
+agency.getPlaces();
+agency.deletePlaces("Sydney");
+agency.getPlaces();
     }
 }

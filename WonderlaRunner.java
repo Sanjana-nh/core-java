@@ -3,12 +3,12 @@ class WonderlaRunner {
         Wonderla wonderla = new Wonderla();
 
         wonderla.addWaterGame("Lazy River");
-        wonderla.addWaterGame("Wave Pool");
+        wonderla.addWaterGame("Wavepool");
         wonderla.addWaterGame("Boomerang");
         wonderla.addWaterGame("Harakiri");
         wonderla.addWaterGame("Twisters");
         wonderla.addWaterGame("Water Pendulum");
-        wonderla.addWaterGame("Rain Disco");
+        wonderla.addWaterGame("Rain Dance");
         wonderla.addWaterGame("Play Pools");
         wonderla.addWaterGame("Wavy & Vertical Fall");
         wonderla.addWaterGame("Jungle Lagoon");
@@ -29,5 +29,11 @@ class WonderlaRunner {
         wonderla.addWaterGame("Free Fall");
 
         wonderla.getWaterGames();
+		wonderla.getWaterGamesByIndex(11);
+		wonderla.getIndexByWaterGames("Drop Loop");
+		wonderla.updateWaterGames("Wavepool", "Wave Pool");
+wonderla.getWaterGames();
+wonderla.deleteWaterGames("Rain Dance");
+wonderla.getWaterGames();
     }
 }

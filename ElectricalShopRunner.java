@@ -24,5 +24,11 @@ class ElectricalShopRunner {
         shop.addAppliance("Coffee Maker");
 
         shop.getAppliances();
+		shop.getAppliancesByIndex(5);
+		shop.getIndexByAppliances("Washing Machine");
+		shop.updateAppliances("Blender", "Hair Straightner");
+		shop.getAppliances();
+		shop.deleteAppliances("Rice Cooker");
+		shop.getAppliances();
     }
 }

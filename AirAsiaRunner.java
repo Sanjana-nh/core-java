@@ -34,5 +34,11 @@ class AirAsiaRunner {
         flight.addPassenger("Smriti Mandhana");
 
         flight.getPassengers();
+		flight.getPassengersByIndex(13);
+		flight.getIndexByPassengers("Tarun Kapoor");
+		flight.updatePassengers("Kavya Joshi", "Sanjana");
+		flight.getPassengers();
+		flight.deletePassenger("Sneha Rao");
+		flight.getPassengers();
     }
 }

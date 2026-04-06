@@ -24,5 +24,11 @@ class PetShopRunner {
         shop.addPetAccessory("Flea and Tick Collar");
 
         shop.getPetAccessories();
+		shop.getPetAccessoriesByIndex(7);
+		shop.getIndexByPetAccessories("Catnip");
+		shop.updatePetAccessories("Dog Collar", "Dog Leash");
+shop.getPetAccessories();
+shop.deletePetAccessories("Cat Tree");
+shop.getPetAccessories();
     }
 }

@@ -2,7 +2,7 @@ class StateRunner {
     public static void main(String[] args) {
         State karnataka = new State();
 
-        karnataka.addHighwayName("NH 44 (Srinagar to Kanyakumari)");
+        karnataka.addHighwayName("NH 4 (Srinagar to Kanyakumari)");
         karnataka.addHighwayName("NH 48 (Delhi to Chennai)");
         karnataka.addHighwayName("NH 50 (Bidar to Joida)");
         karnataka.addHighwayName("NH 66 (Panvel to Kanyakumari)");
@@ -13,5 +13,11 @@ class StateRunner {
         karnataka.addHighwayName("NH 275 (Bengaluru to Bantwal)");
 
         karnataka.getHighwayNames();
+		karnataka.getHighwayNamesByIndex(6);
+		karnataka.getIndexByHighwayNames("NH 44 (Srinagar to Kanyakumari)");
+		karnataka.updateHighwayNames("NH 4 (Srinagar to Kanyakumari)", "NH 44 (Srinagar to Kanyakumari)");
+karnataka.getHighwayNames();
+karnataka.deleteHighwayNames("NH 73 (Mangaluru to Tumakuru)");
+karnataka.getHighwayNames();
     }
 }

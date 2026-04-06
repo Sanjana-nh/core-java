@@ -30,6 +30,12 @@ pp. addInsuranceNames("Royal");
 pp. addInsuranceNames("RGI");
 
 pp.getInsuranceNames();
+pp.getInsuranceNamesByindex(6);
+pp.getIndexByInsuranceNames("Royal");
+pp.updateInsuranceNames("Health", "Health Insurance");
+pp.getInsuranceNames();
+pp.deleteInsuranceNames("Vehicle");
+pp.getInsuranceNames();
 
 }
 }

@@ -23,5 +23,11 @@ class GoaRunner {
         goa.addBeachName("Galgibaga Beach");
 
         goa.getBeachNames();
+		goa.getBeachNamesByIndex(4);
+		goa.getIndexByBeachNames("Benaulim Beach");
+		goa.updateBeachNames("Colva Beach" , "Cola Beach");
+		goa.getBeachNames();
+		goa.deleteBeachNames("Anjuna Beach");
+		goa.getBeachNames();
     }
 }
